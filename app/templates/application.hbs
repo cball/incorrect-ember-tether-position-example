@@ -1,3 +1,18 @@
 <h2 id="title">Welcome to Ember</h2>
 
+<div style="text-align: right">
+  <a href="#" id="blah">test</a>
+</div>
+
+{{#ember-tether
+  target='#blah'
+  targetAttachment='bottom right'
+  attachment='top right'}}
+
+  <ul class="user-dropdown">
+    <li><a href="#">Profile</a></li>
+    <li><a href="#">Logout</a></li>
+  </ul>
+{{/ember-tether}}
+
 {{outlet}}
